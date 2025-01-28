@@ -1,0 +1,106 @@
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #949494;
+    z-index: 2; 
+    border: 1px solid #ddd; 
+}
+
+.userInfoContainer {
+
+
+ height: 85vh;
+    width: 95%;
+    overflow: hidden;
+  
+ 
+}
+
+.tableWrapper{
+    height: 77vh;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+    border-radius: 8px;
+    position: relative;
+}
+
+
+.countUsers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+#totalCount, #totalCountActive {
+    padding: 5px 15px;
+    background-color: #4ec651f0;
+    color: #fff;
+    border-radius: 5px;
+    position: sticky;
+    top: 0;
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+
+    color: #333;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #fafafa;
+    color: #555;
+}
+
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td, table th {
+    transition: background-color 0.3s ease;
+}
+
+
+td:last-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+td:last-child::before {
+    content: '• ';
+    color: #28a745;
+    font-size: 16px;
+}
+
+td:last-child.inactive::before {
+    content: '• ';
+    color: #dc3545;
+}
+

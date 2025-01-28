@@ -1,0 +1,715 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: corinto;
+  src: url(../../Fonts/Corinto\ Town.ttf);
+}
+
+@font-face {
+  font-family: Genflox;
+  src: url(../../Fonts/Genflox.ttf);
+}
+
+@font-face {
+  font-family: Winter half;
+  src: url(../../Fonts/winterHalf/Winter\ Half.ttf);
+}
+
+
+@font-face {
+  font-family: open sans;
+  src: url(../../Fonts/openSans/OpenSans-Light.ttf);
+}
+
+
+
+
+
+
+#logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+
+#logo h1 {
+  font-family: "Lobster", cursive;
+  font-size: 28px; /* Reduced font size */
+  color: #ffd700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hook {
+  grid-column: span 2;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+#hook h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffd700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+#hook p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #f1f1f1;
+}
+
+#about-us h4,
+#get-in-touch h4,
+#social-media h4 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffd700;
+}
+
+#about-us p,
+#get-in-touch p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #f1f1f1;
+}
+
+#get-in-touch form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#get-in-touch input {
+  width: 80%;
+  padding: 12px;
+  border: 2px solid #ffd700;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+#get-in-touch input::placeholder {
+  color: #ffd700;
+}
+
+#get-in-touch input:focus {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+#get-in-touch button {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+#get-in-touch button:hover {
+  background-color: #ffa500;
+  transform: scale(1.1);
+}
+
+#social-media ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+#social-media a {
+  color: #ffd700;
+  font-size: 22px;
+  transition: 0.3s ease;
+}
+
+#social-media a:hover {
+  color: #ffa500;
+  transform: scale(1.2);
+}
+
+.footerContainer {
+  width: 100%;
+  padding: 2rem;
+  background-color: #929c8f;
+  gap: 2rem;
+}
+
+.leftContainer {
+  width: 40%;
+}
+
+#social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem;
+}
+
+.wrapperFooter {
+  display: flex;
+  width: 100%;
+  gap: 6rem;
+}
+
+.textWrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.leftText h1 {
+  font-size: 11rem;
+  margin-top: 74px;
+  font-family: "Bebas Neue", sans-serif;
+  color:  #ffffff;
+  margin-bottom: 0.5rem;
+  line-height: 80.6px;
+}
+
+.leftText h3 {
+  font-size: 2.5rem;
+  margin-left: 10px;
+  color:  #ffffff;
+  font-family: none;
+
+  position: relative;
+}
+span#questionMark {
+  position: absolute;
+  font-size: 7rem;
+  top: -7px;
+}
+.rightText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightText img {
+  width: 9rem;
+}
+
+.rightText h2 {
+  font-size: 2.3rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-family: corinto;
+  text-transform: lowercase;
+}
+
+.rightText span {
+  font-size: 5rem;
+  font-family: "corinto";
+  font-weight: bold;
+  line-height: 38px;
+  color: #ffa701;
+}
+
+.rightContainer {
+  width: 55%;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.aboutUs {
+  background-color: #d8d8d8;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 1px 4px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.aboutUs h2 {
+  font-size: 1.5rem;
+  color: #313330;
+  margin-bottom: 0.5rem;
+  font-family: sans-serif;
+}
+
+.aboutUs p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.getinTouch {
+  background-color: #d8d8d8;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  position: relative;
+}
+
+.getinTouch h2 {
+  font-size: 1.5rem;
+  color: #48494b;
+  margin-bottom: 1rem;
+}
+
+.getinTouch input[type="text"],
+.getinTouch input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.getinTouch input[type="submit"] {
+  background-color: #000000e0;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.getinTouch input[type="submit"]:hover {
+  background-color: #ffa200;
+}
+
+/* page 2 */
+
+section#welcome {
+  height: 100vh;
+  width: 100%;
+
+  position: relative;
+}
+
+section#welcome {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+  color: white;
+  text-align: center;
+  gap: 17px;
+
+}
+
+.boxImg {
+  position: absolute;
+  width: 7%;
+}
+
+.leftImg{
+  left: 11rem;
+    top: 12rem;
+}
+.leftImgDown{
+  left: 11rem;
+  top: 23rem;
+}
+
+
+.rightImgdown{
+  right: 11rem;
+  top: 22rem;
+}
+
+.rightImg{
+  right: 11rem;
+  top: 10rem;
+}
+
+
+
+.welcomeWrapper{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.imageContainer img{
+  width: 100%;
+  object-fit: contain;
+
+  
+}
+
+section#welcome h1 {
+  font-size: 5rem;
+  font-family: 'Bebas Neue';
+
+  color: #3e4e39;
+}
+section#welcome p {
+  font-size: 1.5rem;
+}
+section#welcome .btn {
+  background-color: #3e4e39;
+  color: white;
+  padding: 16px 27px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 2px;
+}
+section {
+
+  text-align: center;
+}
+
+
+section#introPage{
+  height: 100vh;
+}
+
+
+#horizontal {
+  height: 255.436px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.twentytwenty-container img {
+  width: 100%;
+}
+
+#page4{
+  min-height: 100vh;
+  width: 100%;
+  border-top: 1px solid #00000082;
+  padding: 1rem;
+  position: relative;
+}
+
+
+#page3{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #3e4e39;
+
+}
+
+.headerText{
+  padding: 3rem;
+}
+
+.headerText h1{
+  font-family: genflox;
+    font-size: 4rem;
+    color: white;
+    line-height: 0.5;
+    letter-spacing: 3px;
+}
+
+.headerText h3{
+  font-family: winter half;
+    color: #dbddda;
+}
+
+.headerText h2{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.headerText{
+  display: flex
+  ;
+  flex-direction: column;
+      align-items: center;
+}
+
+
+.headerText .subWrapper{
+  display: flex
+  ;
+      align-items: center;
+}
+
+
+
+.card{
+  height: 50vh;
+  width: 14rem;
+
+ 
+ 
+  position: relative;
+  overflow: hidden;
+}
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.cardDetails {
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  font-size: 13px;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  margin-inline: auto;
+  width: 10rem;
+  height: 168px;
+  padding: 0.7rem 1rem;
+  opacity: 0;
+  display: flex
+;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card:hover .cardDetails {
+  animation: show-data 0.5s forwards;
+}
+
+.card:hover {
+  overflow: initial;
+}
+
+.card:not(:hover) .cardDetails {
+  animation: remove-data 0.5s forwards;
+}
+
+@keyframes show-data {
+  0% {
+      transform: translateY(0);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(-7rem);
+      opacity: 1;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+      transform: translateY(-7rem);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 0;
+  }
+}
+
+.cardContainer{
+  display: flex
+  ;
+      /* place-items: center; */
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+}
+
+
+.cardName h2{
+  font-family: sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 37px;
+}
+
+p#footerText{
+  text-align: center;
+    font-size: 2rem;
+    margin-top: 26px;
+    color: white;
+    font-family: fantasy;
+}
+
+.cardDetails a{
+  text-decoration: none;
+  color: #3e4e39; 
+}
+
+
+.cardDetails p{
+  display: flex
+  ;
+      align-items: center;
+      text-align: center;
+}
+
+
+.before-after{
+  padding: 0;
+  height: 33rem;
+  /* min-height: 100vh; */
+  display: flex
+;
+  flex-direction: column;
+  gap: 4rem;
+  /* margin-top: 3rem; */
+  background-color: white;
+}
+
+
+
+.headingContainer h2{
+  font-family: Montserrat Bold;
+  font-size: 3rem;
+}
+
+.beforeAfterWrapper{
+display: flex;
+}
+
+.textDescription .bodyWrapper{
+  display: flex
+;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: justify;
+    width: 76%;
+}
+
+
+button#explore{
+  background-color: #3e4e39;
+  color: white;
+  padding: 13px 22px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 2px;
+  width: 8rem;
+  cursor: pointer;
+}
+
+
+#explore a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.twentytwenty-wrapper.twentytwenty-horizontal {
+width: 80%;
+  position: relative; 
+}
+.hookImage {
+  position: fixed;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+#page2{
+  background-color: white;
+}
+
+
+
+
+
+
+
+#introPage {
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: white;
+ 
+  text-align: center;
+  font-family: open sans;
+}
+
+
+button#gitResponseBtn{
+  position: absolute;
+  width: 88px;
+  height: 37px;
+  bottom: -47px;
+
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  left: 0;
+  right: 0;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin-inline: auto;
+
+  background-color: white;
+}
+
+button#gitResponseBtn:hover{
+  background-color: #d3d2d2;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+textarea{
+  width: 100%;
+    height: 4rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
